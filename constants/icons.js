@@ -12,18 +12,31 @@ import eyeHide from "../assets/icons/eye-hide.png";
 import eye from "../assets/icons/eye.png";
 import play from "../assets/icons/play.png";
 
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import Feather from 'react-native-vector-icons/Feather';
+import Entypo from 'react-native-vector-icons/Entypo';
+
+
+export const FontAwesomeIcon = FontAwesome;
+export const MaterialIcon = MaterialIcons;
+export const IonIcon = Ionicons;
+export const FeatherIcon = Feather;
+export const EntypoIcon = Entypo;
+
 export default {
-  play,
-  bookmark,
-  home,
-  plus,
-  profile,
-  leftArrow,
-  menu,
-  search,
-  upload,
-  rightArrow,
-  logout,
-  eyeHide,
-  eye,
+	play,
+	bookmark,
+	home,
+	plus,
+	profile,
+	leftArrow,
+	menu,
+	search,
+	upload,
+	rightArrow,
+	logout,
+	eyeHide,
+	eye,
 };

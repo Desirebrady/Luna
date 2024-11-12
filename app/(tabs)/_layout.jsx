@@ -3,7 +3,7 @@ import React from 'react';
 import { Tabs, Redirect } from 'expo-router';
 import { StatusBar } from "expo-status-bar";
 import { icons } from "../../constants";
-import { useGlobalContext } from "../../context/GlobalProviders";
+import { useGlobalContext } from "../../context/GlobalProvider";
 
 const TabIcon = ({ icon, color, name, focused }) => {
 	return (
@@ -98,6 +98,19 @@ const TabsLayout = () => {
 								focused={focused}
 							/>
 						)
+					}}
+				/>
+				<Tabs.Screen
+					name="settings"
+					options={{
+						headerStyle: {
+							backgroundColor: '#161622',
+						},
+						headerShadowVisible: false,
+						headerTitle: 'Settings and Activity',
+						headerTintColor: 'white',
+						headerLeftLabelVisible: true,
+						href: null,
 					}}
 				/>
 			</Tabs>

@@ -5,7 +5,7 @@ import { Redirect, router } from "expo-router";
 import CustomButton from "../components/CustomButton";
 import { images } from "../constants";
 
-import { useGlobalContext } from '../context/GlobalProviders';
+import { useGlobalContext } from '../context/GlobalProvider';
 
 export default function App() {
 	const { loading, isLogged } = useGlobalContext();
@@ -21,10 +21,6 @@ export default function App() {
 						source={images.logo}
 						className="w-[180px] h-[84px] mt-4"
 						resizeMode='contain' />
-					{/* <Image
-						source={images.cards}
-						className="max-w-[380px] w-full h-[300px]"
-						resizeMode='contain' /> */}
 					<View className="relative mt-5">
 						<Text className="text-3xl text-white font-bold text-center">
 							Discover Endless{"\n"}
