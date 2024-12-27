@@ -5,14 +5,15 @@ import { router } from 'expo-router'
 import { useGlobalContext } from "../../context/GlobalProvider";
 import { EntypoIcon } from '../../constants/icons';
 import { TouchableOpacity } from 'react-native';
+import { signOut } from '../../lib/appwrite';
 
 const Settings = () => {
-	const { setUser, setIsLogged } = useGlobalContext();
+	const { setUser, setIsLoggedIn } = useGlobalContext();
 
 	const logout = async () => {
 		await signOut();
 		setUser(null);
-		setIsLogged(false);
+		setIsLoggedIn(false);
 
 		router.replace("/sign-in");
 	};

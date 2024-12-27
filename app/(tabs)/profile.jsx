@@ -13,7 +13,7 @@ import { EntypoIcon } from '../../constants/icons';
 
 
 const Profile = () => {
-	const { user, setUser, setIsLogged } = useGlobalContext();
+	const { user, setUser, setIsLoggedIn } = useGlobalContext();
 	const { data: posts, refetch } = useAppwrite(() => getUserPosts(user.$id));
 
 	return (

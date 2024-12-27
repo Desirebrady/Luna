@@ -45,7 +45,7 @@ const Home = () => {
 						<View className="flex my-10 px-4 space-y-6">
 							<View className="flex justify-between items-start flex-row mb-6">
 								<View className="mt-6">
-									<Text className="font-pmedium text-sm text-gray-100">Welcome Back</Text>
+									<Text className="font-pmedium text-sm text-gray-100">Welcome Back,</Text>
 									<Text className="text-2xl font-psemibold text-white">{user?.username}</Text>
 								</View>
 								<View className="mt-1.5">
