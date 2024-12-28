@@ -14,9 +14,9 @@ const TabIcon = ({ icon, color, name, focused }) => {
 				tintColor={color}
 				className="w-6 h-6"
 			/>
-			<Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`} style={{ color: color }}>
+			{/* <Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`} style={{ color: color }}>
 				{name}
-			</Text>
+			</Text> */}
 		</View>
 	)
 }
@@ -30,7 +30,7 @@ const TabsLayout = () => {
 			<Tabs
 				screenOptions={{
 					tabBarShowLabel: false,
-					tabBarActiveTintColor: '#FFA001',
+					tabBarActiveTintColor: '#38BDF8',
 					tabBarInactiveTintColor: '#CDCDE0',
 					tabBarStyle: {
 						backgroundColor: '#161622',
@@ -56,20 +56,21 @@ const TabsLayout = () => {
 					}}
 				/>
 				<Tabs.Screen
-					name="bookmark"
+					name="search"
 					options={{
-						title: "Bookmark",
+						title: "Search",
 						headerShown: false,
 						tabBarIcon: ({ color, focused }) => (
 							<TabIcon
-								icon={icons.bookmark}
+								icon={icons.search}
 								color={color}
-								name="Bookmark"
+								name="Search"
 								focused={focused}
 							/>
 						)
 					}}
 				/>
+
 				<Tabs.Screen
 					name="create"
 					options={{
@@ -80,6 +81,21 @@ const TabsLayout = () => {
 								icon={icons.plus}
 								color={color}
 								name="Create"
+								focused={focused}
+							/>
+						)
+					}}
+				/>
+				<Tabs.Screen
+					name="bookmark"
+					options={{
+						title: "Bookmark",
+						headerShown: false,
+						tabBarIcon: ({ color, focused }) => (
+							<TabIcon
+								icon={icons.bookmark}
+								color={color}
+								name="Bookmark"
 								focused={focused}
 							/>
 						)

@@ -31,7 +31,7 @@ const Home = () => {
 	};
 
 	return (
-		<SafeAreaView className="bg-primary h-full w-full">
+		<SafeAreaView className="bg-primary/95 h-full w-full">
 			{loading && !refreshing ? (
 				<View className="flex-1 justify-center items-center">
 					<ActivityIndicator size="large" color="#ffffff" />
@@ -43,7 +43,7 @@ const Home = () => {
 					renderItem={({ item }) => <VideoCard video={item} />}
 					ListHeaderComponent={() => (
 						<View className="flex my-10 px-4 space-y-6">
-							<View className="flex justify-between items-start flex-row mb-6">
+							<View className="flex justify-between items-start flex-row mt-2">
 								<View className="mt-6">
 									<Text className="font-pmedium text-sm text-gray-100">Welcome Back,</Text>
 									<Text className="text-2xl font-psemibold text-white">{user?.username}</Text>
@@ -52,11 +52,11 @@ const Home = () => {
 									<Image source={images.logoSmall} className="w-12 h-14" resizeMode="contain" />
 								</View>
 							</View>
-							<SearchInput initialQuery="" />
+							{/* <SearchInput initialQuery="" />
 							<View className="w-full flex-1 pt-5 pb-8">
 								<Text className="text-gray-100 text-xl font-pregular mb-3">Latest Videos</Text>
 								<Trending posts={latestPosts || []} />
-							</View>
+							</View> */}
 						</View>
 					)}
 					ListEmptyComponent={() => (

@@ -19,7 +19,7 @@ const Settings = () => {
 	};
 
 	return (
-		<SafeAreaView className="bg-primary h-full">
+		<SafeAreaView className="bg-primary/95 h-full">
 			<ScrollView>
 				<View className="w-full flex-1 justify-center h-full px-4">
 					{/* <Text className="text-white mb-10">Settings</Text> */}

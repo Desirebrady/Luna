@@ -17,7 +17,7 @@ const Profile = () => {
 	const { data: posts, refetch } = useAppwrite(() => getUserPosts(user.$id));
 
 	return (
-		<SafeAreaView className="bg-primary h-full w-full">
+		<SafeAreaView className="bg-primary/95 h-full w-full">
 			<FlatList
 				data={posts}
 				keyExtractor={(item) => item.$id}

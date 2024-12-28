@@ -73,9 +73,9 @@ const Create = () => {
 	};
 
 	return (
-		<SafeAreaView className="bg-primary h-full flex-1">
+		<SafeAreaView className="bg-primary/95 h-full flex-1">
 			<ScrollView className="px-4 my-6">
-				<Text className="text-2xl text-white font-psemibold mt-6">Upload Video</Text>
+				<Text className="text-2xl text-white font-psemibold mt-6">New Video</Text>
 				<FormField
 					title="Video Title"
 					value={form.title}
